@@ -1,3 +1,5 @@
+package org.example;
+
 public class container<T> {
     private Object[] array;
     private int size;

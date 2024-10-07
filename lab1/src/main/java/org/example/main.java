@@ -1,4 +1,6 @@
-public class Main {
+package org.example;
+
+public class main {
     public static void main(String[] args) {
         container<Integer> container = new container<>();
         container.add(10);
