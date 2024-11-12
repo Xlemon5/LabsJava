@@ -5,19 +5,26 @@ import java.util.UUID;
 public class Department {
 
     private String departmentName;
-    private UUID uuid = UUID.randomUUID();
+    private UUID departmentID = UUID.randomUUID();
 
-    public Department(String departmentName, UUID uuid){
+    public Department(String departmentName, UUID departmentID){
         this.departmentName = departmentName;
-        this.uuid = uuid;
+        this.departmentID = departmentID;
     }
 
     public String getDepartmentName() {
         return departmentName;
     }
 
-    public UUID getUuid() {
-        return uuid;
+    public UUID getDepartmentID() {
+        return departmentID;
     }
 
+    @Override
+    public String toString() {
+        return
+                "departmentName=" + departmentName + '\'' +
+                        ", departmentID=" + departmentID
+                ;
+    }
 }

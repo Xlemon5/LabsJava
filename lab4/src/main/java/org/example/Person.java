@@ -40,4 +40,15 @@ public class Person {
     public String getBirthday() {
         return birthday;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "personID=" + personID +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", birthday=" + birthday+ '\''
+                + department.toString()+
+                ", salary=" + salary + '}';
+    }
 }
