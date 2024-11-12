@@ -22,10 +22,10 @@ public class measurePerformance {
         long getLinkedListTime = performResultLinkedArrayList.GetPerformanceTime();
         long deleteLinkedListTime = performResultLinkedArrayList.DeletePerformanceTime();
 
-        System.out.printf("%-10s | %-15s | %-20s | %-20s | %-20s\n", "Collection", "Number of items", "ms adding", "ms getting", "ms deleting");
-        System.out.println("-----------------------------------------------------------------------------------------------------------------");
-        System.out.printf("%-10s | %-15d | %-20d | %-20d | %-20d\n", "ArrayList", givenOperationCount, addArrayListTime,getArrayListTime, deleteArrayListTime);
-        System.out.printf("%-10s | %-15d | %-20d | %-20d | %-20d\n", "LinkedList", givenOperationCount, addLinkedListTime,getLinkedListTime, deleteLinkedListTime);
+        System.out.printf("%-10s | %-15s | %-15s | %-15s | %-15s\n", "Collection", "Number of items", "ms adding", "ms getting", "ms deleting");
+        System.out.println("------------------------------------------------------------------------------");
+        System.out.printf("%-10s | %-15d | %-15d | %-15d | %-15d\n", "ArrayList", givenOperationCount, addArrayListTime,getArrayListTime, deleteArrayListTime);
+        System.out.printf("%-10s | %-15d | %-15d | %-15d | %-15d\n", "LinkedList", givenOperationCount, addLinkedListTime,getLinkedListTime, deleteLinkedListTime);
         System.out.print("\n\n");
     }
 
