@@ -4,17 +4,18 @@ public class Person {
     private final int personID;
     private final String name;
     private final String sex;
-    private final Department department;
-    private final int salary;
     private final String birthday;
+    private final Department department;
+    private  final  int salary;
 
-    public Person(int personID, String name, String sex, Department department, int salary, String birthday){
+
+    public Person(int personID, String name, String sex, String date, int salary, Department department) {
         this.personID = personID;
         this.name = name;
         this.sex = sex;
-        this.department = department;
+        this.birthday = date;
         this.salary = salary;
-        this.birthday = birthday;
+        this.department = department;
     }
 
     public int getPersonID(){
